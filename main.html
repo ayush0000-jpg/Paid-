@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url('{{ url_for('static', filename='bg.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .button {
+            background-color: #FFD700;
+            border: 4px solid black;
+            color: black;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 20px auto;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 10px 10px black;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            background-color: #ffcc00;
+        }
+
+        .button:active {
+            transform: scale(0.95);
+            box-shadow: 5px 5px black;
+            background-color: #e5b800;
+        }
+
+        .button2 {
+            background-color: #FF0000;
+        }
+
+        .button3 {
+            background-color: #FFFF00;
+        }
+
+        .button4 {
+            background-color: #4682B4;
+        }
+
+        .button5 {
+            background-color: #FA8072;
+        }
+
+        .button6 {
+            background-color: #0088cc;
+            border: 4px solid black;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 20px auto;
+            cursor: pointer;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 10px 10px black;
+        }
+        #background-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Send iframe to the background */
+            border: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding-top: 20%;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+  <iframe id="background-iframe" src="back.html"></iframe>
+    <div class="container">
+        <button class="button" onclick="window.location.href='bdgwin.html'">BDG WIN</button>
+        <button class="button button2" onclick="window.location.href='82lot.html'">82 Lottery</button>
+        <button class="button button3" onclick="window.location.href='51club.html'">51 Game</button>
+        <button class="button button4" onclick="window.location.href='Tiranga.html'">Tiranga</button>
+        <button class="button button5" onclick="window.location.href='91club.html'">91 Club</button>
+        <button class="button button6" onclick="window.location.href='https://t.me/+JHucnsE8qpZmMjll';">Telegram</button><!-- Telegram button -->
+    </div>
+</body>
+</html>
